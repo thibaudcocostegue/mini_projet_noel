@@ -2,4 +2,4 @@ composer.phar
 /vendor/
 .history/
 /api/vendor/
-db_data/
+/db_data/
