@@ -13,7 +13,6 @@ class routing
         $this->actualRoute = (substr($route, -1) !== '/') ? $route."/" : $route;
 
         $this->routes = array(
-            "/api/getUser/" => array("User", "getUser"),
             "/api/test/" => array("Test", "Index"),
         );
     }
