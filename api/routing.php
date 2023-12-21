@@ -7,6 +7,7 @@ class routing
 
     private $routes;
     public $actualRoute;
+
     public function __construct($route = "/")
     {
         $this->actualRoute = (substr($route, -1) !== '/') ? $route."/" : $route;

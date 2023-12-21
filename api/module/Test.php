@@ -1,9 +1,9 @@
 <?php
-
-class Test
+require "Module.php";
+class Test extends Module
 {
     public function index()
     {
-        return "TEST";
+        $this->returnJson( ["response"=>"TEST"]);
     }
 }
