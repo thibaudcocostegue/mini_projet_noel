@@ -30,7 +30,7 @@ class routing
             $Classe = $route[0];
             $Methode = $route[1];
 
-            include_once 'App/' . $Classe . '.php';
+            include_once 'Application/' . $Classe . '.php';
 
             $instance = new $Classe();
 

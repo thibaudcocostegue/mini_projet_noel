@@ -28,6 +28,17 @@ services:
     networks:
       - app-network
 
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: api-phpmyadmin
+    environment:
+      PMA_HOST: mysql  # même nom que le service mysql
+      PMA_PORT: 3306
+    restart: always
+    ports:
+      - 8180:80
+    networks:
+      - app-network
 networks:
   app-network:
     driver: bridge
