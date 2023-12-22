@@ -1,6 +1,7 @@
 <?php
 
-require "error.php";
+require __DIR__ . '/vendor/autoload.php';
+use Application\Controller\error_api;
 
 class routing
 {
@@ -29,7 +30,7 @@ class routing
             $Classe = $route[0];
             $Methode = $route[1];
 
-            include_once 'module/' . $Classe . '.php';
+            include_once 'App/' . $Classe . '.php';
 
             $instance = new $Classe();
 

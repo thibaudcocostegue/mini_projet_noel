@@ -1,0 +1,295 @@
+{
+    "receiptNumber": {
+        "type": "string",
+        "mandatory": true,
+        "field": "a1"
+    },
+	"organismName": {
+        "type": "string",
+        "mandatory": true,
+        "field": "a3"
+    },
+    "organismSirenRna": {
+        "type": "string",
+        "mandatory": true,
+        "field": "a4"
+    },
+    "organismAddressNumber": {
+        "type": "string",
+        "mandatory": true,
+        "field": "a5"
+    },
+    "organismAddressRoad": {
+        "type": "string",
+        "mandatory": true,
+        "field": "a6"
+    },
+    "organismAddressZipCode": {
+        "type": "string",
+        "mandatory": true,
+        "field": "a7"
+    },
+    "organismAddressCity": {
+        "type": "string",
+        "mandatory": true,
+        "field": "a8"
+    },
+    "organismAddressCountry": {
+        "type": "string",
+        "mandatory": true,
+        "field": "a9"
+    },
+	"organismObject": {
+        "type": "string",
+        "mandatory": true,
+        "field": "a10"
+    },
+	"decreeDate": {
+        "type": "timestamp",
+        "mandatory": true,
+		"field": "d12",
+		"dependency": {
+			"field": "FRUP"
+		}
+    },
+	"publishesDate": {
+        "type": "timestamp",
+        "mandatory": true,
+		"field": "d13",
+		"dependency": {
+			"field": "FRUP"
+		}
+    },
+	"moselleDecreeDate": {
+        "type": "timestamp",
+        "mandatory": true,
+		"field": "d14",
+		"dependency": {
+			"field": "FRUP_MOZEL"
+		}
+    },
+	"preciseOther": {
+        "type": "string",
+        "mandatory": true,
+		"field": "a11",
+		"dependency": {
+			"field": "AUTRE"
+		}
+    },
+	"ORGA_SCI_TECH_aprovalDate": {
+        "type": "timestamp",
+        "mandatory": true,
+		"field": "a14",
+		"dependency": {
+			"field": "ORGA_SCI_TECH"
+		}
+    },
+	"FOND_MONUMENTS_aprovalDate": {
+        "type": "timestamp",
+        "mandatory": true,
+		"field": "a15",
+		"dependency": {
+			"field": "FOND_MONUMENTS"
+		}
+    },
+	"ORGA_AIDE_FIN_aprovalDate": {
+        "type": "timestamp",
+        "mandatory": true,
+		"field": "a16",
+		"dependency": {
+			"field": "ORGA_AIDE_FIN"
+		}
+    },
+	"FED_ORGA_aprovalDate": {
+        "type": "timestamp",
+        "mandatory": true,
+		"field": "a17",
+		"dependency": {
+			"field": "FED_ORGA"
+		}
+    },
+	"ORGA_ETAT_MEMBRE_aproval_date": {
+        "type": "timestamp",
+        "mandatory": true,
+		"field": "a18",
+		"dependency": {
+			"field": "ORGA_ETAT_MEMBRE"
+		}
+    },
+	"donorName": {
+        "type": "string",
+        "mandatory": true,
+		"field": "Denomination"
+    },
+	"donorLegalForm": {
+        "type": "string",
+        "mandatory": true,
+		"field": "Forme juridique"
+    },
+	"donorSiren": {
+        "type": "integer",
+        "mandatory": true,
+		"field": "Siren"
+    },
+	"donorAddressNumber": {
+        "type": "string",
+        "mandatory": true,
+		"field": "a19"
+    },
+	"donorAddressRoad": {
+        "type": "string",
+        "mandatory": true,
+		"field": "a20"
+    },
+	"donorAddressZipCode": {
+        "type": "string",
+        "mandatory": true,
+		"field": "a21"
+    },
+	"donorAddressCity": {
+        "type": "string",
+        "mandatory": true,
+		"field": "a22"
+    },
+	"donationsAmount": {
+        "type": "float",
+        "mandatory": true,
+		"field": "a22"
+    },
+	"donationsAmountWordsLine1": {
+        "type": "string",
+        "mandatory": true,
+		"field": "a24"
+    },
+	"donationsAmountWordsLine2": {
+        "type": "string",
+        "mandatory": true,
+		"field": "a25"
+    },
+	"donationsDescription": {
+        "type": "string",
+        "mandatory": true,
+		"field": "a26"
+    },
+	"paymentsAmount": {
+        "type": "float",
+        "mandatory": true,
+		"field": "a27"
+    },
+	"paymentsAmountWordsLine1": {
+        "type": "string",
+        "mandatory": true,
+		"field": "a28"
+    },
+	"paymentsAmountWordsLine2": {
+        "type": "string",
+        "mandatory": true,
+		"field": "a29"
+    },
+	"totalAmount": {
+        "type": "float",
+        "mandatory": true,
+		"field": "a30"
+    },
+	"totalAmountWordsLine1": {
+        "type": "string",
+        "mandatory": true,
+		"field": "a32"
+    },
+	"totalAmountWordsLine2": {
+        "type": "string",
+        "mandatory": true,
+		"field": "a33"
+    },
+	"documentDateSignature": {
+        "type": "timestamp",
+        "mandatory": true,
+		"field": "a35"
+    },	
+    "organismType": {
+		"type": "string",
+		"mandatory": true,
+		"dependency": {
+			"field": "organismType",
+			"values": {
+				"LOI_1901": {
+					"CAC0": 1,
+					"CAC1": 1
+				},
+				"FRUP": {
+					"CAC0": 2,
+					"CAC1": 1
+				},
+				"FRUP_MOZEL": {
+					"CAC0": 2,
+					"CAC1": 1
+				},
+                "FUFP": {
+					"CAC0": 3,
+					"CAC1": 1
+				},
+                "F_ENTREPRISE": {
+					"CAC0": 4,
+					"CAC1": 1
+				},
+                "MUSEE_FR": {
+					"CAC0": 5,
+					"CAC1": 1
+				},
+                "ORGA_BNL": {
+					"CAC0": 6,
+					"CAC1": 1
+				},
+				"AUTRE": {
+					"CAC0": 7,
+					"CAC1": 1
+				},
+				"ASS_CULT": {
+					"CAC2": 1
+				},
+                "EES_ART": {
+					"CAC3": 1
+				},
+				"EES_CONSUL": {
+					"CAC4": 1
+				},
+				"ORGA_SCI_TECH": {
+					"CAC5": 1
+				},
+				"ORGA_OEUVRE_ART": {
+					"CAC6": 1
+				},
+				"THESE": {
+					"CAC7": 1
+				},
+				"SOCIETE_ETAT": {
+					"CAC8": 1
+				},
+				"SOCIETE_NAT_AUDIOV": {
+					"CAC9": 1
+				},
+				"SOCIETE_NAT_MUSIC": {
+					"CAC10": 1
+				},
+				"FOND_MONUMENTS": {
+					"CAC11": 1
+				},
+				"FONDS_DONATION": {
+					"CAC12": 1
+				},
+				"ORGA_AIDE_FIN": {
+					"CAC13": 1
+				},
+				"FED_ORGA": {
+					"CAC14": 1
+				},
+				"ORGA_BIENS_CULT": {
+					"CAC15": 1
+				},
+				"ORGA_ETAT_MEMBRE": {
+					"CAC16": 1
+				}
+			}
+		}
+	}
+}

@@ -1,5 +1,6 @@
 <?php
-require "Module.php";
+namespace Application\Controller;
+
 class Test extends Module
 {
     public function index()

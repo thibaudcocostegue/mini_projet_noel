@@ -1,5 +1,7 @@
 <?php
 
+namespace Application\Controller;
+
 class error_api
 {
     public static function return_error($code_error)
