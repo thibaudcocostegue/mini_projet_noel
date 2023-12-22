@@ -1,6 +1,6 @@
 <?php 
 
-namespace Application\Controller;
+namespace Application;
 
 use mikehaertl\pdftk\Pdf;
 

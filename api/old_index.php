@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-use Application\Controller\App_config;
+use Application\App_config;
 $LOG_PATH = App_config::get('LOG_PATH', '');
 // echo "[LOG_PATH]: $LOG_PATH";
 
@@ -10,7 +10,7 @@ $LOG_PATH = App_config::get('LOG_PATH', '');
 // $log_msg = Logger::getInstance();
 // $log_msg->info('Hello World');
 
-use Application\Controller\Module;
+use Application\Module;
 Module::log();
 
 

@@ -1,6 +1,6 @@
 <?php 
 
-namespace Application\Controller;
+namespace Application;
 
 class App_config
 {

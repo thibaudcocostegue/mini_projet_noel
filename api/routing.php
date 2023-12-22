@@ -1,7 +1,7 @@
 <?php
 
 require __DIR__ . '/vendor/autoload.php';
-use Application\Controller\error_api;
+use Application\error_api;
 
 class routing
 {
