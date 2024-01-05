@@ -2,7 +2,7 @@
 
 namespace Application;
 
-require __DIR__."/../error.php";
+require "error.php";
 
 class Module
 {
@@ -13,7 +13,8 @@ class Module
 
     function __construct()
     {
-        
+
+        self::log();
         $this->header = apache_request_headers();
         $this->token = (isset($this->header["token"])) ? $this->header["token"] : "";
 

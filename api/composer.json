@@ -1,5 +1,18 @@
 {
-    "name": "root/html",
+    "description": "Mini projet Noel",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Application\\": "Application/"
+        }
+    },
+    "name": "thibaudmaciuk/mini_projet_noel",
+    "authors": [
+        {
+            "name": "Thibaud Maciuk",
+            "email": "thibaud.maciuk@le-campus-numerique.fr"
+        }
+    ],
     "require": {
         "monolog/monolog": "^2.9",
         "mikehaertl/php-pdftk": "^0.13.1"

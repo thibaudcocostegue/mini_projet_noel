@@ -2,6 +2,7 @@
 
 require __DIR__ . '/vendor/autoload.php';
 use Application\error_api;
+use Application\Module;
 
 class routing
 {
@@ -28,13 +29,17 @@ class routing
             $route = $this->routes[$this->actualRoute];
             
             $Classe = $route[0];
+            $ClasseNamespace = '\\Application\\'.$route[0];
+
             $Methode = $route[1];
 
-            include_once 'Application/' . $Classe . '.php';
+            include_once "Application/".$Classe.".php";
 
-            $instance = new $Classe();
+            $instance = new $ClasseNamespace();
 
-            return call_user_func([$instance, $Methode]);
+            $data = array();
+
+            return call_user_func_array([$instance, $Methode], $data);
         }
         else
         {

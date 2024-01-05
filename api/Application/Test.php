@@ -2,6 +2,8 @@
 
 namespace Application;
 
+use Application\Module;
+
 class Test extends Module
 {
 
@@ -10,8 +12,11 @@ class Test extends Module
         parent::__construct();
     }
 
+
+
+    
     public function index()
     {
-        $this->returnJson( ["response"=>"TEST"]);
+        $this->returnJson(["response"=>"TEST"]);
     }
 }
