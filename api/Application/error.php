@@ -2,7 +2,7 @@
 
 namespace Application;
 
-class error_api
+class error
 {
     public static function return_error($code_error)
     {

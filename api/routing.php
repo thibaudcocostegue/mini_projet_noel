@@ -1,7 +1,7 @@
 <?php
 
 require __DIR__ . '/vendor/autoload.php';
-use Application\error_api;
+use Application\error;
 use Application\Module;
 
 class routing
@@ -15,6 +15,7 @@ class routing
         $this->actualRoute = (substr($route, -1) !== '/') ? $route."/" : $route;
 
         $this->routes = array(
+            "/" => array("test", "Index"),
             "/api/test/" => array("Test", "Index"),
         );
     }
@@ -43,7 +44,7 @@ class routing
         }
         else
         {
-            return error_api::return_error("500");
+            return error::return_error("500");
         }
 
     }
